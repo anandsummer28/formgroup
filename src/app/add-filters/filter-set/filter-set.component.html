@@ -1,0 +1,8 @@
+<div [formGroup]="formset">
+  <div *ngFor="let eachSlider of sliderGroup()" [formGroup]="eachSlider">
+    <filter-slider [slider]="eachSlider"></filter-slider>
+  </div>
+
+  <sync-selection [formset]="formset"></sync-selection>
+
+</div>

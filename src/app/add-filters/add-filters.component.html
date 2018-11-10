@@ -1,0 +1,28 @@
+<div class="container">
+
+  <form [formGroup]="speciality">
+    add-filter : {{ speciality.value | json}}
+  	<h4><a href="#fs1" data-toggle="collapse" data-target="#fs1">Filter set 1</a></h4>
+    <div id="fs1" class="collapse">
+      <filter-set [formset]="speciality"></filter-set>
+    </div>
+  </form>
+
+
+  <form [formGroup]="pcp">
+    add-filter : {{ pcp.value | json}}
+    <h4><a href="#fs2" data-toggle="collapse" data-target="#fs2">Filter set 2</a></h4>
+    <div id="fs2" class="collapse">
+      <filter-set [formset]="pcp"></filter-set>
+    </div>
+  </form>
+
+  <form [formGroup]="amt">
+    add-filter : {{ amt.value | json}}
+    <h4><a href="#fs3" data-toggle="collapse" data-target="#fs3">Filter set 3</a></h4>
+    <div id="fs3" class="collapse">
+      <filter-set [formset]="amt"></filter-set>
+    </div>
+  </form>
+
+</div>
